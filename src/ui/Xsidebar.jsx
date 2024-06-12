@@ -28,7 +28,7 @@ const Xsidebar = () => {
           sx={{
             width: `calc(100% - ${drawerWidth}px)`,
             ml: `${drawerWidth}px`,
-            background: `black  `,
+            background: `white  `,
             boxShadow: `none`,
           }}
         >
@@ -55,7 +55,7 @@ const Xsidebar = () => {
           <Divider />
           
 
-          <List sx={{  padding:'20px'}}>
+          <List sx={{  paddingLeft:'5px'}}>
             {[
               "Approval",
               "Events",
@@ -65,9 +65,9 @@ const Xsidebar = () => {
               "Tier",
               "Policy",
             ].map((text, index) => (
-              <ListItem key={text} disablePadding>
+              <ListItem sx={{paddingBottom:'8px'}} key={text} disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>
+                  <ListItemIcon sx={{marginRight:'0', paddingLeft:'20px'}}>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon>
                   <ListItemText primary={text} />
@@ -75,7 +75,7 @@ const Xsidebar = () => {
               </ListItem>
             ))}
           </List>
-          <Divider />
+          <Divider sx={{marginTop:'80px'}} />
         </Drawer>
         <Box
           component="main"
