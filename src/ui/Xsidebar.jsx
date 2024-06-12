@@ -28,7 +28,7 @@ const Xsidebar = () => {
           sx={{
             width: `calc(100% - ${drawerWidth}px)`,
             ml: `${drawerWidth}px`,
-            background: `white`,
+            background: `black  `,
             boxShadow: `none`,
           }}
         >
@@ -55,7 +55,7 @@ const Xsidebar = () => {
           <Divider />
           
 
-          <List>
+          <List sx={{  padding:'20px'}}>
             {[
               "Approval",
               "Events",
